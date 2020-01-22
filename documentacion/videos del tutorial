@@ -1,0 +1,35 @@
+tip 8 exportar pdf
+https://www.youtube.com/watch?v=HwIkemi35vs
+comandos
+php artisan make:controller UserController
+php artisan make:seeder UsersTableSeeder
+composer require barryvdh/laravel-dompdf
+Installation Laravel 5.x:
+After updating composer, add the ServiceProvider to the providers array in config/app.php
+Barryvdh\DomPDF\ServiceProvider::class,
+You can optionally use the facade for shorter code. Add this to your facades:
+'PDF' => Barryvdh\DomPDF\Facade::class,
+php artisan migrate:refresh --seed
+
+
+
+tip 9 exportar excel con maatwebsite de packagelist.org
+https://www.youtube.com/watch?v=YOMQudcPYiU
+comando
+composer require maatwebsite/excel
+documentacion para instalacion https://docs.laravel-excel.com/3.1/getting-started/installation.html
+php artisan make:export UsersExport --model=User
+
+
+
+tip 10 importar excel con maatwebsite 
+https://www.youtube.com/watch?v=h0H4Y0U2DGk&list=PLhCiuvlix-rTmA5exq3g5CBnI2PD_qG67&index=11
+comando
+php artisan make:import UsersImport --model=User
+
+
+
+packetes de php de https://packagist.org/
+
+barryvdh/laravel-dompdf
+maatwebsite/excel 
